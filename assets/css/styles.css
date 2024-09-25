@@ -978,6 +978,16 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
