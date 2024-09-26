@@ -783,6 +783,14 @@ video {
   width: 96%;
 }
 
+.w-\[86\%\] {
+  width: 86%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -797,6 +805,14 @@ video {
 
 .resize {
   resize: both;
+}
+
+.list-image-\[url\(\.\/assets\/images\/arrow-right-s-line\.svg\)\] {
+  list-style-image: url(./assets/images/arrow-right-s-line.svg);
+}
+
+.list-image-\[url\(\.\.\/images\/arrow-right-s-line\.svg\)\] {
+  list-style-image: url(../images/arrow-right-s-line.svg);
 }
 
 .grid-cols-1 {
@@ -1083,6 +1099,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1235,6 +1261,14 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1257,6 +1291,18 @@ video {
 
   .md\:w-\[83\%\] {
     width: 83%;
+  }
+
+  .md\:w-\[86\%\] {
+    width: 86%;
+  }
+
+  .md\:w-\[82\%\] {
+    width: 82%;
+  }
+
+  .md\:w-\[81\%\] {
+    width: 81%;
   }
 
   .md\:flex-row {

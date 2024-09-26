@@ -3,7 +3,7 @@ document.getElementById("menu-btn").addEventListener("click", () => {
     menu.classList.toggle("hidden");
 });
 
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".dAlcantarillados", {
     slidesPerView: 1, // Por defecto, en pantallas pequeñas muestra 1 tarjeta
     spaceBetween: 20, // Espacio entre cada tarjeta
     breakpoints: {
