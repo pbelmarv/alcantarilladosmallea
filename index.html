@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -89,13 +89,10 @@
     </head>
     <body class="bg-gray-100 font-poppins">
         <header
-            class="relative h-screen bg-[url('../images/hero-background.avif')] bg-cover bg-center"
+            class="sticky relative top-0 z-30"
         >
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-black opacity-65"></div>
-
             <!-- Navbar Sticky -->
-            <nav class="sticky top-0 bg-white backdrop-blur-lg shadow-2xl z-10">
+            <nav class="top-0 bg-white/65 backdrop-blur-lg shadow-2xl z-10">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
                         <div class="flex-shrink-0 flex items-center">
@@ -103,10 +100,10 @@
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="210"
+                                    width="218"
                                     zoomAndPan="magnify"
                                     viewBox="0 0 450 135.000003"
-                                    height="150"
+                                    height="160"
                                     preserveAspectRatio="xMidYMid meet"
                                     version="1.0"
                                 >
@@ -378,24 +375,19 @@
 
                         <div class="hidden md:flex items-center space-x-8">
                             <a
-                                href=""
+                                href="#inicio"
                                 class="text-xl text-gray-800 hover:text-sky-500 transition-all duration-300 ease-in-out"
                                 >Inicio</a
                             >
                             <a
-                                href=""
+                                href="#emergencias"
+                                class="text-xl text-gray-800 hover:text-sky-500 transition-all duration-300 ease-in-out"
+                                >Emergencias</a
+                            >
+                            <a
+                                href="#servicios"
                                 class="text-xl text-gray-800 hover:text-sky-500 transition-all duration-300 ease-in-out"
                                 >Servicios</a
-                            >
-                            <a
-                                href=""
-                                class="text-xl text-gray-800 hover:text-sky-500 transition-all duration-300 ease-in-out"
-                                >Nosotros</a
-                            >
-                            <a
-                                href=""
-                                class="text-xl text-gray-800 hover:text-sky-500 transition-all duration-300 ease-in-out"
-                                >Contacto</a
                             >
                         </div>
                         <div class="md:hidden flex items-center">
@@ -421,36 +413,16 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Responsive Menu -->
-                <div id="mobile-menu" class="lg:hidden hidden pt-12">
-                    <a
-                        href=""
-                        class="block px-4 py-2 text-center text-gray-800 hover:bg-gray-200"
-                        >Inicio</a
-                    >
-                    <a
-                        href=""
-                        class="block px-4 py-2 text-center text-gray-800 hover:bg-gray-200"
-                        >Servicios</a
-                    >
-                    <a
-                        href=""
-                        class="block px-4 py-2 text-center text-gray-800 hover:bg-gray-200"
-                        >Nosotros</a
-                    >
-                    <a
-                        href=""
-                        class="block px-4 py-2 text-center text-gray-800 hover:bg-gray-200"
-                        >Contacto</a
-                    >
-                </div>
             </nav>
+        </header>
 
+        <section class="relative h-screen bg-[url('../images/hero-background.avif')] bg-cover bg-center" id="inicio">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black opacity-65"></div>
             <!-- Hero content -->
             <div class="flex items-center justify-center h-full relative z-9">
                 <div class="text-center text-white">
-                    <h1 class="text-4xl md:text-6xl font-light px-4">
+                    <h1 class="text-4xl md:text-6xl font-light px-4 mb-12 md:mb-28">
                         Servicio de alcantarillados
                     </h1>
                     <p class="mt-4 text-lg md:text-2xl mb-6 px-4">
@@ -458,16 +430,16 @@
                     </p>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <section class="bg-gray-300 py-12 text-white text-center">
+        <section class="bg-gray-300 py-12 text-white text-center" id="emergencias">
             <h2
                 class="text-4xl lg:text-6xl font-light mb-4 text-orange-500 pb-4"
             >
                 ¡Emergencias!
             </h2>
             <p
-                class="text-lg text-gray-800 mb-16 px-8 lg:px-24 text-justify w-[96%] md:w-[83%] mx-auto"
+                class="text-lg text-gray-800 mb-16 px-8 lg:px-24 text-justify w-[85%] md:w-[77%] mx-auto"
             >
                 Entendemos que los problemas sanitarios pueden surgir en el
                 momento menos esperado. Por eso, ofrecemos un servicio de
@@ -582,7 +554,7 @@
                 </div>
             </div>
             <div class="content-center">
-                <p class="text-[#0187CB] text-2xl pb-6">Correo</p>
+                <p class="text-[#1b8118] text-2xl pb-4">Correo</p>
                 <p>
                     <a
                         href="mailto:contacto@alcantarilladosmallea.cl"
@@ -594,7 +566,7 @@
         </section>
 
         <!-- Carrusel de Servicios (Cards deslizables) -->
-        <section id="services" class="py-16 bg-white">
+        <section id="servicios" class="py-16 bg-white">
             <!-- <h2 class="text-3xl md:text-7xl text-center font-light mb-8">
                 Nuestros Servicios
             </h2>
