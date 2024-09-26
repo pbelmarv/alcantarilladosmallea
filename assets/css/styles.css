@@ -1291,6 +1291,11 @@ video {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1304,6 +1309,10 @@ video {
 
   .xl\:text-left {
     text-align: left;
+  }
+
+  .xl\:text-center {
+    text-align: center;
   }
 
   .xl\:text-6xl {
