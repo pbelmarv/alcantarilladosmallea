@@ -896,6 +896,11 @@ video {
   background-color: rgb(255 255 255 / 0.45);
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/images\/hero-background\.avif\'\)\] {
   background-image: url('../images/hero-background.avif');
 }
