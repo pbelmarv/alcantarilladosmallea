@@ -86,13 +86,57 @@
         <meta name="theme-color" content="#ffffff" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+        <!-- Global site tag (gtag.js) - Google Ads: 722875497 -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-722875497"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "AW-722875497");
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-ML3HGN");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <script type="text/javascript">
+            (function () {
+                var ldk = document.createElement("script");
+                ldk.type = "text/javascript";
+                ldk.async = true;
+                ldk.src =
+                    "https://s.cliengo.com/weboptimizer/5f3be32b8e9de0002acfc3ef/5f3be32c8e9de0002acfc3f2.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ldk, s);
+            })();
+        </script>
     </head>
     <body class="bg-gray-100 font-poppins">
-        <header
-            class="sticky relative top-0 z-30"
-        >
+        <header class="sticky relative top-0 z-30">
             <!-- Navbar Sticky -->
-            <nav class="top-0 bg-white/65 backdrop-blur-lg shadow-2xl z-10">
+            <nav class="top-0 bg-white/45 backdrop-blur-lg shadow-2xl z-40">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
                         <div class="flex-shrink-0 flex items-center">
@@ -390,6 +434,7 @@
                                 >Servicios</a
                             >
                         </div>
+
                         <div class="md:hidden flex items-center">
                             <button
                                 id="menu-btn"
@@ -412,17 +457,43 @@
                             </button>
                         </div>
                     </div>
+
+                    <div
+                        id="mobile-menu"
+                        class="md:hidden hidden pt-4 pb-4 text-center"
+                    >
+                        <a
+                            href="#inicio"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-sky-600"
+                            >Inicio</a
+                        >
+                        <a
+                            href="#emergencias"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-sky-600"
+                            >Emergencias</a
+                        >
+                        <a
+                            href="#servicios"
+                            class="block px-4 py-2 text-gray-800 hover:bg-gray-200 hover:text-sky-600"
+                            >Servicios</a
+                        >
+                    </div>
                 </div>
             </nav>
         </header>
 
-        <section class="relative h-screen bg-[url('../images/hero-background.avif')] bg-cover bg-center" id="inicio">
+        <section
+            id="inicio"
+            class="relative h-screen bg-[url('../images/hero-background.avif')] bg-cover bg-center"
+        >
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black opacity-65"></div>
             <!-- Hero content -->
             <div class="flex items-center justify-center h-full relative z-9">
                 <div class="text-center text-white">
-                    <h1 class="text-4xl md:text-6xl font-light px-4 mb-12 md:mb-14">
+                    <h1
+                        class="text-4xl md:text-6xl font-light px-4 mb-12 md:mb-14"
+                    >
                         Servicio de alcantarillados
                     </h1>
                     <p class="mt-4 text-lg md:text-2xl mb-6 px-4">
@@ -430,16 +501,27 @@
                     </p>
                 </div>
             </div>
+
+            <a
+                href="tel:+56965457235"
+                class="fixed bottom-4 right-4 bg-red-600 text-white p-4 rounded-full shadow-lg hover:bg-red-700 transition duration-300 ease-in-out z-50 flex items-center justify-center"
+            >
+            <img src="./assets/images/phone-fill.svg" height="48" alt="ePhone">
+                <span class="ml-2 font-semibold">¡Emergencia!</span>
+            </a>
         </section>
 
-        <section class="bg-gray-300 py-12 text-white text-center" id="emergencias">
+        <section
+            id="emergencias"
+            class="bg-gray-200 py-12 text-white text-center"
+        >
             <h2
                 class="text-4xl lg:text-6xl font-light mb-4 text-orange-500 pb-4"
             >
                 ¡Emergencias!
             </h2>
             <p
-                class="text-lg text-gray-800 mb-16 px-8 lg:px-24 text-justify w-[85%] md:w-[77%] mx-auto"
+                class="text-lg text-gray-800 mb-16 px-8 lg:px-24 text-justify w-[91%] md:w-[77%] mx-auto"
             >
                 Entendemos que los problemas sanitarios pueden surgir en el
                 momento menos esperado. Por eso, ofrecemos un servicio de
@@ -457,9 +539,11 @@
                 class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-14 gap-6 mb-16"
             >
                 <div
-                    class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8"
+                    class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 gap-16"
                 >
-                    <div class="mb-8 md:mb-0">
+                    <div
+                        class="mb-10 md:mb-0 border-b pb-12 md:pr-16 md:border-b-0 md:border-r md: border-r-1 md:border-white"
+                    >
                         <p class="text-3xl mb-4 text-[#0187CB]">
                             +56 9 6545 7235
                         </p>
@@ -494,7 +578,9 @@
                             </a>
                         </span>
                     </div>
-                    <div class="mb-10 md:mb-0">
+                    <div
+                        class="mb-10 md:mb-0 border-b pb-12 md:pr-16 md:border-b-0 md:border-r md: border-r-1 md:border-white"
+                    >
                         <p class="text-3xl mb-4 text-[#0187CB]">
                             +56 9 9257 0743
                         </p>
@@ -529,7 +615,9 @@
                             </a>
                         </span>
                     </div>
-                    <div class="mb-8 md:mb-0">
+                    <div
+                        class="mb-10 md:mb-0 border-b pb-12 md:pr-16 md:border-b-0 md:border-white"
+                    >
                         <p class="text-3xl mb-4 text-[#0187CB]">
                             +56 2 2244 0639
                         </p>
@@ -553,8 +641,22 @@
                     </div>
                 </div>
             </div>
-            <div class="content-center">
-                <p class="text-[#1b8118] text-2xl pb-4">Correo</p>
+            <div class="flex justify-center pb-6">
+                <p>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="48"
+                        height="48"
+                        fill="rgba(1,135,203,1)"
+                    >
+                        <path
+                            d="M21 3C21.5523 3 22 3.44772 22 4V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5V4C2 3.44772 2.44772 3 3 3H21ZM8 15V17H0V15H8ZM5 10V12H0V10H5ZM19.5659 5H4.43414L12 11.8093L19.5659 5Z"
+                        ></path>
+                    </svg>
+                </p>
+                <!-- </div> -->
+                <div class="flex justify-center"></div>
                 <p>
                     <a
                         href="mailto:contacto@alcantarilladosmallea.cl"
@@ -567,15 +669,6 @@
 
         <!-- Carrusel de Servicios (Cards deslizables) -->
         <section id="servicios" class="py-16 bg-white">
-            <!-- <h2 class="text-3xl md:text-7xl text-center font-light mb-8">
-                Nuestros Servicios
-            </h2>
-
-            <div class="grid grid-cols-1 xl:grid-cols-3 gap-8 px-6 py-3 border border-2">
-                <div class="w-32 h-24 bg-gray-300 rounded-xl">asdasdasd</div>
-                <div class="w-32 h-24 bg-gray-300 rounded-xl">asdasdasd</div>
-                <div class="w-32 h-24 bg-gray-300 rounded-xl">asdasdasdasd</div>
-            </div> -->
             <div class="container mx-auto">
                 <h2
                     class="service__title mb-[50px] text-[#0187CB] text-center xl:text-center text-4xl xl:text-6xl w-90 md:w-[90%] mx-auto"
@@ -584,7 +677,7 @@
                 </h2>
 
                 <p
-                    class="text-gray-800 text-2xl text-justify mb-8 w-[85%] md:w-[83%] mx-auto text-justify"
+                    class="text-gray-800 text-2xl text-left mb-8 w-[85%] md:w-[83%] mx-auto text-justify"
                 >
                     Destape de Alcantarillados, Mantención de Bombas y Limpieza
                     de Fosas.
@@ -606,11 +699,12 @@
                     funcionando sin problemas.
                 </p>
 
-                <div class="xl:max-w-[1380px] pb-4 shadow-2xl">
-
+                <div class="xl:max-w-[1380px] mx-auto pb-4 shadow-2xl">
                     <!-- Destape de alcantarillados -->
                     <div class="w-[85%] md:w-[81%] mx-auto">
-                        <h3 class="text-[#0187CB] text-xl pb-4 md:pb-12">
+                        <h3
+                            class="text-[#0187CB] text-xl font-semibold pb-4 md:pb-12"
+                        >
                             Destape de alcantarillados
                         </h3>
 
@@ -618,8 +712,7 @@
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                                Descargas generales ( Horizontales y Verticales
-                                ).
+                                Descargas generales (Horizontales y Verticales).
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
@@ -644,9 +737,47 @@
                                 alcantarillados.
                             </li>
                         </ul>
+                        <h3 class="text-[#1B8118] text-xl mb-4 md:mb-8">
+                            Camión Hidro-Jet alta presión
+                            <span class="text-gray-500 text-sm"
+                                >Para destape de:</span
+                            >
+                        </h3>
+
+                        <!-- Destape de alcantarillados -->
+
+                        <ul class="w-[86%] mx-auto">
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Colectores de aguas lluvias.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Colectores de aguas servidas.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Colectores lodos grasos.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Lavado de planta elevadora.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Extracción de aguas en estanque de prueba.
+                            </li>
+                        </ul>
                     </div>
                     <div class="text-center mt-6 md:mt-8">
-                        <p class="text-xs text-gray-500">< Deslizar para ver ></Deslizar></p>
+                        <p class="text-xs text-gray-500">
+                            < Deslizar para ver >
+                        </p>
                     </div>
 
                     <div
@@ -659,184 +790,226 @@
                                     class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider1.jpg"
-                                        alt="Slide 1"
-                                        class="w-full h-72 object-contain rounded-lg mb-4"
-                                    />
-
-                                    <h2
-                                        class="text-xl text-gray-800 font-bold mb-2"
-                                    >
-                                        Servicio 1
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-700 text-justify">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Neque blanditiis iste
-                                        possimus.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider2.jpg"
-                                        alt="Slide 2"
-                                        class="w-full h-72 object-cover rounded-lg mb-4"
-                                    />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 2
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider3.jpg"
+                                        src="./assets/images/destape_alcantarillado0.jpg"
                                         alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 3
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape con carillas manuales<br />
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider4.jpg"
-                                        alt="Slider 4"
+                                        src="./assets/images/destape_alcantarillado2.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 4
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape cámara con Jet de alta presión
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider5.jpg"
-                                        alt="Slider 5"
+                                        src="./assets/images/destape_alcantarillado1.jpg"
+                                        alt="Slide 1"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 5
+
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape lavaplatos con maquinaria
+                                        eléctrica
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
                                     </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/destape_alcantarillado3.jpg"
+                                        alt="Slider 3"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape de urinarios con maquina
+                                        eléctrica<br />
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Destape de alcantarillado
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider6.jpg"
-                                        alt="Slider 6"
+                                        src="./assets/images/destape_alcantarillado5.jpg"
+                                        alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 6
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape WC con maquinaria eléctrica
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider7.jpg"
-                                        alt="Slider 7"
+                                        src="./assets/images/destape_alcantarillado6.jpg"
+                                        alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 7
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape cámara<br /><br />
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider8.jpg"
-                                        alt="Slider 8"
+                                        src="./assets/images/destape_alcantarillado7.jpg"
+                                        alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 8
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape de pileta con maquina
+                                        eléctrica<br />
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
                                         Destape de alcantarillado
                                     </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/destape_alcantarillado8.jpg"
+                                        alt="Slider 3"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Destape en horizontal/vertical con
+                                        maquina eléctrica<br />
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Destape de alcantarillado
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/destape_alcantarillado9.jpg"
+                                        alt="Slider 3"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Extracción de raices en
+                                        alcantarillado<br />
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Destape de alcantarillado
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/destape_alcantarillado10.jpg"
+                                        alt="Slider 3"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Extracción de raices en
+                                        alcantarillado<br />
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Destape de alcantarillado
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/destape_alcantarillado11.jpg"
+                                        alt="Slider 3"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Extracción de raices en
+                                        alcantarillado<br />
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Destape de alcantarillado
                                     </p>
                                 </div>
                             </div>
@@ -845,11 +1018,14 @@
                     </div>
                 </div>
 
-                <div class="xl:max-w-[1380px] pb-4 pt-14 md:pt-16 shadow-2xl">
-
+                <div
+                    class="xl:max-w-[1380px] mx-auto pb-4 pt-14 md:pt-16 shadow-2xl"
+                >
                     <!-- Destape de alcantarillados -->
                     <div class="w-[85%] md:w-[81%] mx-auto">
-                        <h3 class="text-[#0187CB] text-xl mb-4 md:mb-8">
+                        <h3
+                            class="text-[#0187CB] text-xl font-semibold mb-4 md:mb-8"
+                        >
                             Limpieza de fosas
                         </h3>
 
@@ -857,53 +1033,45 @@
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Extracción de riles no peligrosos.
+                                Limpieza de fosas de aguas servidas.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Extracción de aguas lluvias.
+                                Limpieza de fosas de lodo graso.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Extracción de aguas subterraneas.
+                                Limpieza y Extracción de solidos en planta
+                                elevadora.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Extracción de grasas y residuos.
-                            </li>
-                        </ul>
-                        <h3 class="text-[#1B8118] text-xl mb-4 md:mb-8">
-                            Camión Hidro-Jet alta presion <span class="text-gray-500 text-sm">Para destape de:</span>
-                        </h3>
-
-                        <ul class="w-[86%] mx-auto">
-                            <li
-                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
-                            >
-                            Colectores de aguas lluvias.
+                                Extracción de riles no peligrosos.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Colectores de aguas servidas.
+                                Extracción de aguas lluvias.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Colectores lodos grasos.
+                                Extracción de aguas subterraneas.
                             </li>
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Lavado de planta elevadora.
+                                Extracción de grasas y residuos.
                             </li>
                         </ul>
                     </div>
                     <div class="text-center mt-6 md:mt-8">
-                        <p class="text-xs text-gray-500">< Deslizar para ver ></Deslizar></p>
+                        <p class="text-xs text-gray-500">
+                            < Deslizar para ver >
+                        </p>
                     </div>
 
                     <div
@@ -916,184 +1084,183 @@
                                     class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider1.jpg"
+                                        src="./assets/images/planta_aguas1.jpg"
                                         alt="Slide 1"
-                                        class="w-full h-72 object-contain rounded-lg mb-4"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
 
                                     <h2
-                                        class="text-xl text-gray-800 font-bold mb-2"
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
                                     >
-                                        Servicio 1
+                                        Limpieza de planta elevadora de aguas
+                                        servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-700 text-justify">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Neque blanditiis iste
-                                        possimus.
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
+
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider2.jpg"
-                                        alt="Slide 2"
-                                        class="w-full h-72 object-cover rounded-lg mb-4"
-                                    />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 2
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider3.jpg"
+                                        src="./assets/images/planta_aguas3.jpg"
                                         alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 3
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de planta elevadora de aguas
+                                        servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
+                                        Limpieza de fosas
                                     </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/planta_aguas2.jpg"
+                                        alt="Slide 2"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de planta elevadora de aguas
+                                        servidas
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider4.jpg"
-                                        alt="Slider 4"
+                                        src="./assets/images/planta_aguas4.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 4
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de aguas servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider5.jpg"
-                                        alt="Slider 5"
+                                        src="./assets/images/planta_aguas5.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 5
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de aguas servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider6.jpg"
-                                        alt="Slider 6"
+                                        src="./assets/images/planta_aguas6.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 6
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de grasa
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider7.jpg"
-                                        alt="Slider 7"
+                                        src="./assets/images/planta_aguas7.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 7
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de grasa
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
-                            <div class="swiperFosas-slide">
+                            <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider8.jpg"
-                                        alt="Slider 8"
+                                        src="./assets/images/planta_aguas8.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 8
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de grasa
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
+                                        Limpieza de fosas
                                     </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                </div>
+                            </div>
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/planta_aguas9.jpg"
+                                        alt="Slide 2"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de fosa de grasa
+                                    </h2>
+                                    <p class="uppercase text-gray-500 mb-4">
+                                        Limpieza de fosas
                                     </p>
                                 </div>
                             </div>
@@ -1102,47 +1269,35 @@
                     </div>
                 </div>
 
-                <div class="xl:max-w-[1380px] pb-4 pt-14 md:pt-16 shadow-2xl">
-
+                <div
+                    class="xl:max-w-[1380px] mx-auto pb-4 pt-14 md:pt-16 shadow-2xl"
+                >
                     <!-- Destape de alcantarillados -->
                     <div class="w-[85%] md:w-[81%] mx-auto">
-                        <h3 class="text-[#0187CB] text-xl pb-4 md:pb-12">
-                            Bombas sumergibles
+                        <h3
+                            class="text-[#0187CB] text-xl font-semibold mb-4 md:mb-8"
+                        >
+                            Limpieza y lavado de estanque de pruebas
                         </h3>
 
-                        <ul class="w-[86%] mx-auto">
+                        <ul class="w-[86%] mx-auto pb-8 md:pb-14">
                             <li
                                 class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
                             >
-                            Mantención de bombas de aguas servidas.
-                            </li>
-                            <li
-                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
-                            >
-                            Reparación.
-                            </li>
-                            <li
-                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
-                            >
-                            Cambio de bombas.
-                            </li>
-                            <li
-                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
-                            >
-                            Diseño, mantención y reparación de tableros de fuerza y sistemas de bomba.
-                            </li>
-                            <li
-                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
-                            >Ductoscopía con cámara HD y fibra óptica a ductos de alcantarillados y ductos de ventilación.
+                                Lavado con Hidro Jet y extracción de aguas con
+                                camión limpia fosas en estanque de pruebas.
                             </li>
                         </ul>
                     </div>
+
                     <div class="text-center mt-6 md:mt-8">
-                        <p class="text-xs text-gray-500">< Deslizar para ver ></Deslizar></p>
+                        <p class="text-xs text-gray-500">
+                            < Deslizar para ver >
+                        </p>
                     </div>
 
                     <div
-                        class="swiper-container bSumergibles h-[480px] overflow-hidden w-[85%] md:w-[81%] mx-auto"
+                        class="swiper-container lFosas h-[480px] overflow-hidden w-[85%] md:w-[81%] mx-auto"
                     >
                         <div class="swiper-wrapper">
                             <!-- Slide -->
@@ -1151,184 +1306,209 @@
                                     class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider1.jpg"
+                                        src="./assets/images/lavado_hidro_jet1.jpg"
                                         alt="Slide 1"
-                                        class="w-full h-72 object-contain rounded-lg mb-4"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
 
                                     <h2
-                                        class="text-xl text-gray-800 font-bold mb-2"
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
                                     >
-                                        Servicio 1
+                                        Limpieza de estanque de prueba
                                     </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-700 text-justify">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Neque blanditiis iste
-                                        possimus.
+                                    <p
+                                        class="uppercase text-gray-500 text-center mb-4"
+                                    >
+                                        Limpieza y lavado de estanque de pruebas
                                     </p>
                                 </div>
                             </div>
+
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider2.jpg"
-                                        alt="Slide 2"
-                                        class="w-full h-72 object-cover rounded-lg mb-4"
-                                    />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 2
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider3.jpg"
+                                        src="./assets/images/lavado_hidro_jet2.jpg"
                                         alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 3
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de estanque de prueba
                                     </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
+                                    <p
+                                        class="uppercase text-gray-500 text-center mb-4"
+                                    >
+                                        Limpieza y lavado de estanque de pruebas
                                     </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/lavado_hidro_jet3.jpg"
+                                        alt="Slide 2"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de estanque de prueba
+                                    </h2>
+                                    <p
+                                        class="uppercase text-gray-500 text-center mb-4"
+                                    >
+                                        Limpieza y lavado de estanque de pruebas
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider4.jpg"
-                                        alt="Slider 4"
+                                        src="./assets/images/lavado_hidro_jet4.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 4
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Limpieza de estanque de prueba
+                                    </h2>
+                                    <p
+                                        class="uppercase text-gray-500 text-center mb-4"
+                                    >
+                                        Limpieza y lavado de estanque de pruebas
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="xl:max-w-[1380px] mx-auto pb-4 pt-14 md:pt-16 shadow-2xl"
+                >
+                    <!-- Destape de alcantarillados -->
+                    <div class="w-[85%] md:w-[81%] mx-auto">
+                        <h3
+                            class="text-[#0187CB] text-xl font-semibold pb-4 md:pb-8"
+                        >
+                            Bombas sumergibles
+                        </h3>
+
+                        <ul class="w-[86%] mx-auto">
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Mantención de bombas de aguas servidas.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Reparación.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Cambio de bombas.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Diseño, mantención y reparación de tableros de
+                                fuerza y sistemas de bomba.
+                            </li>
+                            <li
+                                class="list-image-[url(../images/arrow-right-s-line.svg)] pb-2"
+                            >
+                                Ductoscopía con cámara HD y fibra óptica a
+                                ductos de alcantarillados y ductos de
+                                ventilación.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt-6 md:mt-8">
+                        <p class="text-xs text-gray-500">
+                            < Deslizar para ver >
+                        </p>
+                    </div>
+
+                    <div
+                        class="swiper-container bSumergibles h-[510px] overflow-hidden w-[85%] md:w-[81%] mx-auto"
+                    >
+                        <div class="swiper-wrapper pb-2">
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
+                                >
+                                    <img
+                                        src="./assets/images/bombas_sumergibles1.jpg"
+                                        alt="Slide 1"
+                                        class="w-full h-72 object-cover rounded-lg mb-4"
+                                    />
+
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Instalación de bombas sumergibles de
+                                        aguas servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Bombas sumergibles
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider5.jpg"
-                                        alt="Slider 5"
+                                        src="./assets/images/bombas_sumergibles2.jpg"
+                                        alt="Slide 2"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 5
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Instalación de bombas sumergibles de
+                                        aguas servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Bombas sumergibles
                                     </p>
                                 </div>
                             </div>
                             <!-- Slide -->
                             <div class="swiper-slide">
                                 <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
+                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-xl"
                                 >
                                     <img
-                                        src="./assets/images/slider6.jpg"
-                                        alt="Slider 6"
+                                        src="./assets/images/bombas_sumergibles3.jpg"
+                                        alt="Slider 3"
                                         class="w-full h-72 object-cover rounded-lg mb-4"
                                     />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 6
+                                    <h2
+                                        class="text-xl text-[#0187CB] font-light mb-4 text-center"
+                                    >
+                                        Instalación de bombas sumergibles de
+                                        aguas servidas
                                     </h2>
                                     <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider7.jpg"
-                                        alt="Slider 7"
-                                        class="w-full h-72 object-cover rounded-lg mb-4"
-                                    />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 7
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Slide -->
-                            <div class="swiper-slide">
-                                <div
-                                    class="flex flex-col items-center bg-white p-6 rounded-lg shadow-2xl"
-                                >
-                                    <img
-                                        src="./assets/images/slider8.jpg"
-                                        alt="Slider 8"
-                                        class="w-full h-72 object-cover rounded-lg mb-4"
-                                    />
-                                    <h2 class="text-xl font-bold mb-2">
-                                        Servicio 8
-                                    </h2>
-                                    <p class="uppercase text-gray-500 mb-4">
-                                        Destape de alcantarillado
-                                    </p>
-                                    <p class="text-gray-600">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Debitis corrupti modi
-                                        ea.
+                                        Bombas sumergibles
                                     </p>
                                 </div>
                             </div>
@@ -1339,37 +1519,84 @@
             </div>
         </section>
 
-        <div
-            class="flex flex-col w-full h-fit bg-[#374151] text-[#e5e7eb] px-48 py-9"
-        >
-            <div class="flex flex-row">
-                <div class="flex flex-col gap-2 justify-center w-[35%] w-[35%]">
-                    <div class="flex items-center w-full gap-4">
-                        <img
-                            src="./assets/images/logo.jpg"
-                            class="w-[127px] lg:w-[350px]"
-                            alt="Logo Preview"
-                        />
-                    </div>
-                </div>
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="container mx-auto px-4">
                 <div
-                    class="flex flex-row w-[65%] justify-end gap-16 text-nowrap"
+                    class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 pb-4"
                 >
-                    <div class="grid grid-cols-1 gap-9">
-                        <div class="flex flex-col gap-2">
-                            <a href="#xxx" class="hover:underline">Inicio</a>
-                            <a href="#xxx" class="hover:underline">Servicios</a>
-                            <a href="#xxx" class="hover:underline">Nosotros</a>
-                            <a href="#xxx" class="hover:underline">Contacto</a>
-                        </div>
+                    <div>
+                        <h2 class="text-xl font-light mb-4">
+                            Alcantarillados Mallea
+                        </h2>
+                        <img
+                            src="./assets/images/alcantarillados_mallea_logo.svg"
+                            class="mb-4"
+                            alt=""
+                        />
+                        <p class="text-gray-400">
+                            somos especialistas en ofrecer soluciones rápidas y
+                            eficaces para el mantenimiento y limpieza de
+                            sistemas de alcantarillado, fosas sépticas y bombas
+                            sumergibles.
+                        </p>
+                    </div>
+
+                    <!-- Columna 2: Enlaces rápidos -->
+                    <div>
+                        <h2 class="text-xl font-light mb-4">Enlaces rápidos</h2>
+                        <ul>
+                            <li class="mb-2">
+                                <a
+                                    href="#inicio"
+                                    class="text-gray-400 hover:text-white"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#emergencias"
+                                    class="text-gray-400 hover:text-white"
+                                    >Emergencias</a
+                                >
+                            </li>
+                            <li class="mb-2">
+                                <a
+                                    href="#servicios"
+                                    class="text-gray-400 hover:text-white"
+                                    >Serviciso</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 3: Redes sociales -->
+                    <div>
+                        <h2 class="text-xl font-light mb-4">Autorizaciones</h2>
+                        <p class="text-gray-400">Seremi.</p>
+                        <p class="text-gray-400">Aguas Andinas.</p>
+                    </div>
+
+                    <!-- Columna 4: Suscripción al boletín -->
+                    <div>
+                        <h2 class="text-xl font-light mb-4">Dirección</h2>
+                        <p class="text-gray-400 mb-4">
+                            <span class="font-bold">Oficina Central:</span>
+                            <br />Calle Lazo 1770 <br />
+                            Pedro Aguirre Cerda - Santiago
+                        </p>
+                        <p class="text-gray-400">
+                            Ramón Subercaseaux 1268 Of. 12 - Depto. 1204 - San
+                            Miguel - Santiago
+                        </p>
                     </div>
                 </div>
+                <hr />
+                <div class="text-center text-gray-500 mt-8 select-none">
+                    <p>&copy; 2024 pbelmarv. Todos los derechos reservados.</p>
+                </div>
             </div>
-            <div class="w-full border-t border-gray-500 my-8"></div>
-            <div class="text-center">
-                © 2024 pbelmarv - All rights reserved.
-            </div>
-        </div>
+        </footer>
+
         <script src="./assets/js/swiper-bundle.min.js"></script>
         <script src="./assets/js/scripts.js"></script>
     </body>
